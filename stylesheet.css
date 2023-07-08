@@ -1,0 +1,87 @@
+/*Long live Belarus*/
+.penguin-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: flex-end;
+}
+
+.penguin {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 50px;
+  animation: penguin-walk 1s infinite linear;
+}
+
+.body {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 60%;
+  height: 70%;
+  background-color: black;
+  border-radius: 50%;
+  animation: penguin-belly 1s infinite alternate;
+}
+
+.face {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 20%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.eye {
+  position: absolute;
+  top: 40%;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  left: 25%;
+}
+
+.feet {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 20%;
+  background-color: orange;
+  animation: penguin-feet 1s infinite alternate;
+}
+
+@keyframes penguin-walk {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes penguin-belly {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes penguin-feet {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
