@@ -1,0 +1,1 @@
+My coding journey continuing. Now I'm practicing some interesting things. I still make most of my works using HTML and CSS. Ultimately I'm learning JavaScript. I hope everything going to be fine! Cheers!
